@@ -1,5 +1,5 @@
 # angular-test
-Courier order
+Мини проект с формой для заказа курьера, добавление элемента в firebaseDatabase и выводом на страницу списка
 
 # AngularTest
 
