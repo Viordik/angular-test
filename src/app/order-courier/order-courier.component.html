@@ -1,0 +1,33 @@
+<div class="wrapper">
+  <form clrForm (ngSubmit)="onSubmit()" clrLayout="vertical" class="form-courier">
+    <div class="form-courier__caption-wrapper">
+      <h1 class="form-courier__h1">Заказать курьера</h1>
+    </div>
+
+    <clr-input-container>
+      <label class="form-courier__label" >Адрес от куда забрать</label>
+      <input clrInput class="form-courier__input" type="text" placeholder="Улица, дом" [(ngModel)]="item.adressFrom" name="adressFrom">
+    </clr-input-container>
+    <clr-input-container>
+      <label class="form-courier__label" >Адрес куда доставить</label>
+      <input clrInput class="form-courier__input" type="text" placeholder="Улица, дом" [(ngModel)]="item.adressTo" name="item.adressTo">
+    </clr-input-container>
+    <clr-date-container>
+      <label class="form-courier__label" >Выберете дату</label>
+      <input clrDate class="form-courier__input" type="date" [(ngModel)]="item.data" name="item.data">
+    </clr-date-container>
+    <clr-input-container>
+      <label class="form-courier__label" >Выберете время</label>
+      <input clrInput class="form-courier__input" type="time" [(ngModel)]="item.time" name="item.time">
+    </clr-input-container>
+    <clr-textarea-container>
+      <label class="form-courier__label" >Комментарий</label>
+      <textarea clrTextarea class="form-courier__textarea" name="" id="" cols="30" rows="10" minlength="10"
+        maxlength="300" placeholder="Комментарий" [(ngModel)]="item.comment" name="item.comment"></textarea>
+    </clr-textarea-container>
+
+    <div class="form-courier__btn-wrapper">
+      <button class="btn" type="submit">Заказать</button>
+    </div>
+  </form>
+</div>

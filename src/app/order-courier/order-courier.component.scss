@@ -1,0 +1,19 @@
+.form-courier {
+  margin: 0 auto;
+  max-width: 600px;
+
+  &__textarea {
+    resize: none;
+    width: 100%;
+  }
+
+  &__btn-wrapper {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
+
+.btn {
+  margin: 1.25em 0;
+  width: 100%;
+}
